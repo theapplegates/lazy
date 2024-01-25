@@ -14,6 +14,11 @@
   status = 200
 
 [[redirects]]
+  from = "/images/verysmall/*"
+  to = "/.netlify/images/?w=300&fit=cover&url=/images/:splat"
+  status = 200
+
+[[redirects]]
   from = "/images/small/*"
   to = "/.netlify/images/?w=500&fit=cover&url=/images/:splat"
   status = 200
@@ -26,6 +31,11 @@
 [[redirects]]
   from = "/images/large/*"
   to = "/.netlify/images/?w=700&fit=cover&url=/images/:splat"
+  status = 200
+  
+  [[redirects]]
+  from = "/images/verylarge/*"
+  to = "/.netlify/images/?w=9500&fit=cover&url=/images/:splat"
   status = 200
 
 [[redirects]]
