@@ -26,6 +26,15 @@ Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for m
 </section >
 
 
+{% set somePhotos = [
+  {url: "TESS_NandS_12-2022_5k.jpg", credit: "NASA/MIT/TESS and Ethan Kruse-University of Maryland College Park", creditURL: "https://svs.gsfc.nasa.gov/14265#media_group_313076"}
+] %}
+<section class="post-teaser">
+{%- for photo in somePhotos %}
+  <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
+  {% lazypicture photo.url, "My boy" %}
+{%- endfor -%}
+</section >
 
 
 ## Image transformation
