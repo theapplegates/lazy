@@ -3,7 +3,6 @@ const sass = require("sass");
 
 
 module.exports = function(eleventyConfig) {
-
   // Layout aliases can make templates more portable
   eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
 
